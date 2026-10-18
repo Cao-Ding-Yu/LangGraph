@@ -3,6 +3,8 @@ from typing import TypedDict
 from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.graph import StateGraph,START,END
 
+# 静态断点的并行测试：静态中断以超步为分割点
+
 class OverAllState(TypedDict):
     final_res:str
 
